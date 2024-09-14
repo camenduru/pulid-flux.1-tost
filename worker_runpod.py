@@ -12,9 +12,6 @@ from flux.util import load_ae, load_clip, load_flow_model, load_t5
 from pulid.pipeline_flux import PuLIDPipeline
 from pulid.utils import resize_numpy_image_long
 
-command = "sed -i 's/from torchvision.transforms.functional_tensor import rgb_to_grayscale/from torchvision.transforms.functional import rgb_to_grayscale/' /usr/local/lib/python3.10/dist-packages/basicsr/data/degradations.py"
-os.system(command)
-
 def get_models(name: str, device: torch.device, offload: bool):
     t5 = load_t5(device, max_length=128)
     clip = load_clip(device)

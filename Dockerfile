@@ -15,7 +15,7 @@ USER camenduru
 
 RUN pip install -q opencv-python imageio imageio-ffmpeg ffmpeg-python av runpod \
     xformers==0.0.25 torchsde==0.2.6 einops==0.8.0 diffusers==0.28.0 transformers==4.41.2 accelerate==0.30.1 matplotlib==3.9.1 insightface \
-    onnx onnxruntime-gpu onnxruntime accelerate timm SentencePiece basicsr ftfy einops facexlib fire && \
+    onnx onnxruntime-gpu onnxruntime accelerate timm SentencePiece git+https://github.com/XPixelGroup/BasicSR ftfy einops facexlib fire && \
     GIT_LFS_SKIP_SMUDGE=1 git clone -b tost https://github.com/camenduru/PuLID-FLUX-hf /content/PuLID-FLUX && \
     aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/camenduru/PuLID/resolve/main/antelopev2/1k3d68.onnx -d /content/PuLID-FLUX/models/antelopev2 -o 1k3d68.onnx && \
     aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/camenduru/PuLID/resolve/main/antelopev2/2d106det.onnx -d /content/PuLID-FLUX/models/antelopev2 -o 2d106det.onnx && \
