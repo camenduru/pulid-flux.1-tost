@@ -1,0 +1,183 @@
+{
+  "$schema": "http://json-schema.org/draft-04/hyper-schema#",
+  "type": "object",
+  "properties": {
+    "readme": {
+      "type": "string",
+      "title": "PuLID: Pure and Lightning ID Customization via Contrastive Alignment",
+      "author": "Zinan Guo, Yanze Wu, Zhuowei Chen, Lang Chen, Qian He",
+      "paper": "https://arxiv.org/abs/2404.16022",
+      "code": "https://github.com/ToTheBeginning/PuLID",
+      "api": "https://github.com/camenduru/tost-api-examples/blob/main/v1/pulid-flux.1.ipynb",
+      "tags": [
+        "Image to Image"
+      ],
+      "widget": "readme"
+    },
+    "input_image_check": {
+        "type": "string",
+        "description": "Pose Image URL",
+        "widget": "textarea"
+    },
+    "prompt": {
+      "type": "string",
+      "description": "Prompt",
+      "widget": "textarea"
+    },
+    "neg_prompt": {
+      "type": "string",
+      "description": "Negative Prompt",
+      "widget": "textarea"
+    },
+    "seed": {
+      "type": "integer",
+      "description": "Seed (if 0 random)"
+    },
+    "num_steps": {
+      "type": "integer",
+      "widget": "select",
+      "description": "Steps",
+      "oneOf": [
+        {
+          "description": "10",
+          "enum": [
+            10
+          ]
+        },
+        {
+          "description": "15",
+          "enum": [
+            15
+          ]
+        },
+        {
+          "description": "20",
+          "enum": [
+            20
+          ]
+        },
+        {
+          "description": "25",
+          "enum": [
+            25
+          ]
+        },
+        {
+          "description": "30",
+          "enum": [
+            30
+          ]
+        }
+      ],
+      "default": 20
+    },
+    "guidance": {
+      "type": "number",
+      "description": "Guidance"
+    },
+    "final_width": {
+      "type": "integer",
+      "description": "Width"
+    },
+    "id_weight": {
+      "type": "number",
+      "widget": "select",
+      "description": "ID Weight",
+      "oneOf": [
+        {
+          "description": "0",
+          "enum": [
+            0
+          ]
+        },
+        {
+          "description": "0.1",
+          "enum": [
+            0.1
+          ]
+        },
+        {
+          "description": "0.2",
+          "enum": [
+            0.2
+          ]
+        },
+        {
+          "description": "0.3",
+          "enum": [
+            0.3
+          ]
+        },
+        {
+          "description": "0.4",
+          "enum": [
+            0.4
+          ]
+        },
+        {
+          "description": "0.5",
+          "enum": [
+            0.5
+          ]
+        },
+        {
+          "description": "0.6",
+          "enum": [
+            0.6
+          ]
+        },
+        {
+          "description": "0.7",
+          "enum": [
+            0.7
+          ]
+        },
+        {
+          "description": "0.8",
+          "enum": [
+            0.8
+          ]
+        },
+        {
+          "description": "0.9",
+          "enum": [
+            0.9
+          ]
+        },
+        {
+          "description": "1",
+          "enum": [
+            1
+          ]
+        }
+      ],
+      "default": 1
+    },
+    "start_step": {
+      "type": "number",
+      "description": "Start Step",
+      "readOnly": true
+    },    
+    "true_cfg": {
+      "type": "number",
+      "description": "True CFG",
+      "readOnly": true
+    },
+    "timestep_to_start_cfg": {
+      "type": "number",
+      "description": "Timestep To Start CFG",
+      "readOnly": true
+    },
+    "max_sequence_length": {
+      "type": "integer",
+      "description": "Max Sequence Length",
+      "readOnly": true
+    }
+  },
+  "buttons": [
+    {
+      "id": "enter",
+      "label": "🥪 Enter"
+    }
+  ]
+}

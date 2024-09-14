@@ -1,0 +1,14 @@
+{
+    "final_width": 1024,
+    "input_image_check": "https://files.catbox.moe/f1cpjc.png",
+    "num_steps": 20,
+    "start_step": 0,
+    "guidance": 4,
+    "seed": 0,
+    "prompt": "portrait, cinematic",
+    "neg_prompt": "bad quality, worst quality, text, signature, watermark, extra limbs",
+    "id_weight": 1.0,
+    "true_cfg": 1.0,
+    "timestep_to_start_cfg": 1,
+    "max_sequence_length": 128
+}
