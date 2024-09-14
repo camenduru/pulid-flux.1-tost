@@ -414,7 +414,7 @@
     "true_cfg": {
       "type": "number",
       "widget": "select",
-      "description": "True CFG",
+      "description": "True CFG Scale",
       "oneOf": [
         {
           "description": "0",
@@ -727,7 +727,7 @@
     },
     "timestep_to_start_cfg": {
       "type": "number",
-      "widget": "select",
+      "widget": "hidden",
       "description": "Timestep To Start CFG",
       "oneOf": [
         {
