@@ -42,7 +42,7 @@ RUN pip install -q opencv-python imageio imageio-ffmpeg ffmpeg-python av runpod 
     # aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/camenduru/FLUX.1-dev/resolve/main/flux1-dev-fp8.safetensors -d /content/PuLID-FLUX/models -o flux1-dev.safetensors && \
     aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/camenduru/PuLID/resolve/main/pulid_flux_v0.9.0.safetensors -d /content/PuLID-FLUX/models -o pulid_flux_v0.9.0.safetensors && \
     aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/camenduru/PuLID/resolve/main/bpe_simple_vocab_16e6.txt.gz -d /content/PuLID-FLUX/eva_clip -o bpe_simple_vocab_16e6.txt.gz && \
-    sed -i 's/from torchvision.transforms.functional_tensor import rgb_to_grayscale/from torchvision.transforms.functional import rgb_to_grayscale/' /usr/local/lib/python3.11/dist-packages/basicsr/data/degradations.py
+    sed -i 's/from torchvision.transforms.functional_tensor import rgb_to_grayscale/from torchvision.transforms.functional import rgb_to_grayscale/' /usr/local/lib/python3.10/dist-packages/basicsr/data/degradations.py
 
 COPY ./worker_runpod.py /content/PuLID-FLUX/worker_runpod.py
 WORKDIR /content/PuLID-FLUX
