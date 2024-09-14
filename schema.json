@@ -890,6 +890,18 @@
         }
       ],
       "default": 128
+    },
+    "example": {
+      "type": "string",
+      "image1": "https://files.catbox.moe/f1cpjc.png",
+      "image2": "https://files.catbox.moe/w3t3yc.png",
+      "image3": "https://files.catbox.moe/8jen8v.png",
+      "image4": "https://files.catbox.moe/fx8fcz.png",
+      "tutorial": "https://github.com/ToTheBeginning/PuLID/blob/main/docs/pulid_for_flux.md",
+      "line1": "Timestep to start inserting ID: The smaller the value, the higher the fidelity, but the lower the editability; the higher the value, the lower the fidelity, but the higher the editability. The recommended range for this value is between 0 and 4. For photorealistic scenes, we recommend using 4; for stylized scenes, we recommend using 0-1. If you are not satisfied with the similarity, you can lower this value; conversely, if you are not satisfied with the editability, you can increase this value.",
+      "line2": "True CFG scale: In most scenarios, it is recommended to use a fake CFG, i.e., setting the true CFG scale to 1, and just adjusting the guidance scale. This is also more efficiency. However, in a few cases, utilizing a true CFG can yield better results.",
+      "line3": "Image 1: referance",
+      "widget": "example"
     }
   },
   "buttons": [
