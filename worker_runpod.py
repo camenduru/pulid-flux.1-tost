@@ -1,4 +1,4 @@
-import os, json, requests, runpod
+import os, json, requests, random, runpod
 
 import time
 import torch
