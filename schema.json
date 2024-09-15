@@ -8,6 +8,7 @@
       "author": "Zinan Guo, Yanze Wu, Zhuowei Chen, Lang Chen, Qian He",
       "paper": "https://arxiv.org/abs/2404.16022",
       "code": "https://github.com/ToTheBeginning/PuLID",
+      "jupyter": "https://github.com/camenduru/PuLID-jupyter",
       "api": "https://github.com/camenduru/tost-api-examples/blob/main/v1/pulid-flux.1.ipynb",
       "tags": [
         "Image to Image"
