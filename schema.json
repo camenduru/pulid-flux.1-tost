@@ -15,10 +15,16 @@
       ],
       "widget": "readme"
     },
+    "upload": {
+      "type": "string",
+      "widget": "upload",
+      "upload_url": "https://litterbox.catbox.moe/resources/internals/api.php",
+      "property": "input_image_check"
+    },
     "input_image_check": {
-        "type": "string",
-        "description": "Pose Image URL",
-        "widget": "textarea"
+      "type": "string",
+      "description": "Pose Image URL",
+      "widget": "textarea"
     },
     "prompt": {
       "type": "string",
@@ -411,7 +417,7 @@
         }
       ],
       "default": 1
-    },    
+    },
     "true_cfg": {
       "type": "number",
       "widget": "select",
